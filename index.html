@@ -4,54 +4,54 @@
 <meta charset="UTF-8">
 <title>Prediksi Premium Gold - GOLTOGEL</title>
 <style>
-body{
-  background:#1a1a1a;
-  display:flex;
+body {
+  background: #1a1a1a;
+  display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding:20px;
-  font-family:Arial, sans-serif;
+  padding: 10px;
+  font-family: Arial, sans-serif;
   margin: 0;
 }
 
-/* --- DROPDOWN PASARAN (LUAR KOTAK) --- */
+/* --- DROPDOWN PASARAN --- */
 .outside-select {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 select#pasaran {
   width: 100%;
-  padding: 18px;
-  border: 3px solid #c5a059;
+  padding: 12px;
+  border: 2px solid #c5a059;
   font-weight: bold;
   background: #000;
   color: #c5a059;
-  border-radius: 50px;
-  font-size: 22px;
+  border-radius: 0; /* Sudut Siku-Siku */
+  font-size: 18px;
   outline: none;
   text-align: center;
   text-align-last: center;
   cursor: pointer;
-  box-shadow: 0 0 25px rgba(197, 160, 89, 0.5);
+  box-shadow: 0 0 15px rgba(197, 160, 89, 0.4);
   text-transform: uppercase;
 }
 
 /* --- FRAME UTAMA --- */
-.frame{
-  width: 1100px;
-  background:url('https://i.pinimg.com/736x/2f/bb/46/2fbb46bf50718eaedd144205f6d386d7.jpg') no-repeat center;
-  background-size:cover;
-  padding: 40px;
-  border:10px solid #c5a059;
-  border-radius:30px;
-  box-shadow:0 0 60px #000;
+.frame {
+  width: 950px;
+  background: url('https://i.postimg.cc/Xqr0Xcf0/f29bc709f041a4b7fef91af3e3d85a72.jpg') no-repeat center;
+  background-size: cover;
+  padding: 20px 30px;
+  border: 6px solid #c5a059;
+  border-radius: 0; /* Sudut Siku-Siku */
+  box-shadow: 0 0 40px #000;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 15px;
 }
 
 .header-top {
@@ -59,33 +59,46 @@ select#pasaran {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid rgba(197, 160, 89, 0.5);
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
-.logo{
-  width: 320px;
-  filter: drop-shadow(0 0 10px #c5a059);
+.logo {
+  width: 240px;
+  filter: drop-shadow(0 0 8px #c5a059);
 }
 
-#tanggal{
-  color:#c5a059;
-  font-weight:bold;
-  font-size: 26px;
-  text-shadow:0 0 10px #c5a059;
+.title-center {
+  color: #c5a059;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 0 15px rgba(197, 160, 89, 0.8), 2px 2px 4px #000;
+  flex-grow: 1;
+  text-align: center;
+}
+
+#tanggal {
+  color: #c5a059;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 0 0 8px #c5a059;
+  min-width: 200px;
+  text-align: right;
 }
 
 .main-content {
   display: flex;
   flex-direction: row;
-  gap: 40px;
-  align-items: center;
+  gap: 25px;
+  align-items: flex-start;
 }
 
 .left-column {
-  flex: 0 0 320px;
+  flex: 0 0 260px;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 15px;
   align-items: center;
 }
 
@@ -98,32 +111,29 @@ select#pasaran {
 
 #pasaran-logo,
 #shio-img {
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   object-fit: contain;
   mix-blend-mode: lighten;
-  filter: drop-shadow(0 0 15px rgba(197, 160, 89, 0.6));
+  filter: drop-shadow(0 0 10px rgba(197, 160, 89, 0.5));
 }
 
 .label-box {
-  color:#c5a059;
-  font-size:18px;
-  font-weight:bold;
-  margin-top:8px;
-  text-shadow: 2px 2px 4px #000;
+  color: #c5a059;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
-/* --- TEKS SHIO: GOLD SAJA --- */
 #shio-text {
-  font-size: 32px;
-  color: #c5a059; /* WARNA GOLD */
+  font-size: 24px;
+  color: #c5a059;
   font-weight: 900;
-  margin-top: 10px;
+  margin-top: 5px;
   text-align: center;
-  text-shadow: 0 0 15px rgba(197, 160, 89, 0.8), 2px 2px 4px #000;
-  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(197, 160, 89, 0.8);
 }
 
 /* --- TABEL & SYAIR --- */
@@ -131,85 +141,80 @@ select#pasaran {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
 }
 
 .data-table {
   width: 100%;
   border-collapse: collapse;
   background: rgba(0,0,0,0.85);
-  border-radius: 10px;
+  border-radius: 0; /* Sudut Siku-Siku */
   overflow: hidden;
 }
 
 .data-table td {
-  padding: 12px 15px;
-  border: 1px solid rgba(197, 160, 89, 0.5);
+  padding: 8px 12px;
+  border: 1px solid rgba(197, 160, 89, 0.4);
   color: #c5a059;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .value {
   color: #fff;
   text-align: center !important;
-  letter-spacing: 2px;
-  font-size: 20px;
+  letter-spacing: 1px;
+  font-size: 16px;
 }
 
 .syair-box {
   background: rgba(0,0,0,0.85);
-  padding: 25px;
+  padding: 15px;
   border: 2px solid #c5a059;
   font-style: italic;
   color: #c5a059;
-  font-size: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(197, 160, 89, 0.3);
-  line-height: 1.8;
+  font-size: 15px;
+  border-radius: 0; /* Sudut Siku-Siku */
+  line-height: 1.5;
   white-space: pre-line;
   text-align: center;
 }
 
-/* --- BAGIAN BAWAH: DOMAIN GOLD SAJA --- */
+/* --- BAGIAN BAWAH --- */
 .footer-links {
   text-align: center;
+  margin-top: 5px;
 }
 
 .label-dropdown {
   color: #c5a059;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 900;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: block;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 
 select#linkAlternatif {
   width: 100%;
   border: none;
   background: transparent;
-  color: #c5a059; /* WARNA GOLD */
-  font-size: 60px; /* Diperbesar sedikit lagi */
+  color: #c5a059;
+  font-size: 40px;
   font-weight: 900;
   text-align: center;
   text-align-last: center;
   outline: none;
   appearance: none;
-  /* Efek Glow Gold Dominan */
-  text-shadow: 0 0 20px rgba(197, 160, 89, 0.7), 0 0 40px rgba(197, 160, 89, 0.4);
+  text-shadow: 0 0 15px rgba(197, 160, 89, 0.7);
   cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-select#linkAlternatif:hover {
-  transform: scale(1.05);
+  border-radius: 0; /* Sudut Siku-Siku */
 }
 
 select#linkAlternatif option {
   background: #000;
   color: #c5a059;
-  font-size: 22px;
+  font-size: 18px;
 }
 </style>
 </head>
@@ -222,6 +227,7 @@ select#linkAlternatif option {
 <div class="frame">
   <div class="header-top">
     <img class="logo" src="https://i.postimg.cc/1RYhkwyY/download-(2).png">
+    <div class="title-center">PREDIKSI JITU</div>
     <div id="tanggal"></div>
   </div>
 
@@ -229,11 +235,11 @@ select#linkAlternatif option {
     <div class="left-column">
       <div class="box-container">
         <img id="pasaran-logo">
-        <div class="label-box"></div>
       </div>
       <div class="box-container">
         <img id="shio-img">
-        <div id="shio-text">-</div> </div>
+        <div id="shio-text">-</div>
+      </div>
     </div>
 
     <div class="right-column">
@@ -278,7 +284,7 @@ select#linkAlternatif option {
 </div>
 
 <script>
-// Logic JavaScript (Tetap sama)
+// Fungsi JavaScript tetap sama sesuai logika sebelumnya
 function updateTanggal(){
   const hari=["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"];
   const bulan=["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
@@ -289,18 +295,18 @@ function updateTanggal(){
 updateTanggal();
 
 const dataShio={
-"SHIO : TIKUS":"https://i.pinimg.com/1200x/0a/b8/9c/0ab89c8244c861dc8299f4e3436b96ca.jpg",
-"SHIO : KERBAU":"https://i.pinimg.com/1200x/fa/27/07/fa27078357aa2525f6b290d986d5a764.jpg",
-"SHIO : HARIMAU":"https://i.pinimg.com/1200x/04/ca/b2/04cab278deee753d0169c2407e9b97f7.jpg",
-"SHIO : KELINCI":"https://i.pinimg.com/1200x/b0/85/ac/b085acf96168d518d4ffcd2dd9c1028f.jpg",
-"SHIO : NAGA":"https://i.pinimg.com/1200x/ae/b4/08/aeb408c70852144f92c2dd6592e497c9.jpg",
-"SHIO : ULAR":"https://i.pinimg.com/1200x/9c/8c/02/9c8c0211b8730f91d6ae38587cebd4f6.jpg",
-"SHIO : KUDA":"https://i.pinimg.com/1200x/6e/6a/64/6e6a64cdd3044f9aefac9b50eca35cfc.jpg",
-"SHIO : KAMBING":"https://i.pinimg.com/1200x/07/f5/ba/07f5ba25555c67979941222935bb8989.jpg",
-"SHIO : MONYET":"https://i.pinimg.com/1200x/b1/53/53/b15353d7971a5ac0f2966fae73424e15.jpg",
-"SHIO : AYAM":"https://i.pinimg.com/1200x/e5/d1/dd/e5d1dd9567ebfe22c83da667fbd7ac6f.jpg",
-"SHIO : ANJING":"https://i.pinimg.com/1200x/0d/19/27/0d1927d4c686aacbc39f956364748396.jpg",
-"SHIO : BABI":"https://i.pinimg.com/1200x/51/2a/e6/512ae6eb246fc58cccfbeed3fc8d1247.jpg"
+"SHIO : TIKUS":"https://i.postimg.cc/h4yFxxw7/download-(14).png",
+"SHIO : KERBAU":"https://i.postimg.cc/pr1gHb8X/download-(13).png",
+"SHIO : HARIMAU":"https://i.postimg.cc/gJG9yKm6/download-(12).png",
+"SHIO : KELINCI":"https://i.postimg.cc/xTZ2rHyF/download-(11).png",
+"SHIO : NAGA":"https://i.postimg.cc/gJppSWq8/download-(10).png",
+"SHIO : ULAR":"https://i.postimg.cc/L8qmhv6b/download-(9).png",
+"SHIO : KUDA":"https://i.postimg.cc/3Rj8YRJS/download-(8).png",
+"SHIO : KAMBING":"https://i.postimg.cc/jjp2Rm6r/download-(6).png",
+"SHIO : MONYET":"https://i.postimg.cc/BQS6ZxFZ/download-(7).png",
+"SHIO : AYAM":"https://i.postimg.cc/25VrbGjk/download-(3).png",
+"SHIO : ANJING":"https://i.postimg.cc/rp0zXMrx/download-(5).png",
+"SHIO : BABI":"https://i.postimg.cc/tCp11KKJ/download-(4).png"
 };
 
 const dataPasaran={
@@ -350,9 +356,9 @@ function updatePrediksi(){
   
   document.getElementById("bbfs").innerText=rand(7);
   document.getElementById("am").innerText=rand(5);
-  document.getElementById("d4").innerText=set(4,3);
-  document.getElementById("d3").innerText=set(3,3);
-  document.getElementById("d2").innerText=set(2,8);
+  document.getElementById("d4").innerText=set(4,2);
+  document.getElementById("d3").innerText=set(3,2);
+  document.getElementById("d2").innerText=set(2,6);
   document.getElementById("cb").innerText=Math.floor(Math.random()*9)+"/"+Math.floor(Math.random()*9);
   document.getElementById("cm").innerText=rand(2)+"/"+rand(2);
   document.getElementById("tw").innerText=rand(2)+"/"+rand(2);
