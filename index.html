@@ -2,186 +2,283 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Prediksi Lengkap - Syair Otomatis & Pasaran Full</title>
+<title>Prediksi Premium Gold - GOLTOGEL</title>
 <style>
 body{
   background:#1a1a1a;
   display:flex;
+  flex-direction: column;
   justify-content:center;
-  padding:10px;
+  align-items: center;
+  min-height: 100vh;
+  padding:20px;
   font-family:Arial, sans-serif;
+  margin: 0;
 }
-/* --- PERLEBAR FRAME --- */
-.frame{
-  width:550px; /* Diperlebar dari 480px */
-  background:url('https://i.pinimg.com/736x/2f/bb/46/2fbb46bf50718eaedd144205f6d386d7.jpg') no-repeat center;
-  background-size:cover;
-  padding:25px 35px;
-  border:10px solid #c5a059;
-  border-radius:25px;
-  box-shadow:0 0 50px #000;
-  text-align:center;
+
+/* --- DROPDOWN PASARAN (LUAR KOTAK) --- */
+.outside-select {
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 600px;
 }
-/* --- PERBESAR LOGO GOLTOGEL --- */
-.logo{
-  width:420px; /* Diperbesar signifikan agar tulisan GOLTOGEL sangat jelas */
-  margin-bottom:10px;
-  filter: drop-shadow(0 0 15px #c5a059);
-}
-#tanggal{
-  color:#c5a059;
-  font-weight:bold;
-  font-size:26px;
-  text-shadow:0 0 12px #c5a059;
-  margin-bottom:20px;
-}
-.header-container{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:30px;
-  margin-bottom:25px;
-}
-.box-container{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-}
-#pasaran-logo,
-#shio-img{
-  width:200px; /* Diperbesar sedikit lagi untuk mengimbangi frame lebar */
-  height:200px;
-  object-fit:contain;
-  border:4px solid #c5a059;
-  border-radius:15px;
-  padding:10px;
-  background:#000;
-  box-shadow:0 0 20px rgba(197, 160, 89, 0.6);
-}
-.label-box {
-  color:#c5a059;
-  font-size:16px;
-  font-weight:bold;
-  margin-top:10px;
-  text-shadow: 1px 1px 2px #000;
-}
-select{
-  width:100%;
-  padding:12px;
-  margin-bottom:15px;
-  border:2px solid #c5a059;
-  font-weight:bold;
-  background:#000;
-  color:#c5a059;
-  border-radius:8px;
-  font-size:18px;
+
+select#pasaran {
+  width: 100%;
+  padding: 18px;
+  border: 3px solid #c5a059;
+  font-weight: bold;
+  background: #000;
+  color: #c5a059;
+  border-radius: 50px;
+  font-size: 22px;
   outline: none;
   text-align: center;
   text-align-last: center;
-  -webkit-appearance: none;
-  appearance: none;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(197, 160, 89, 0.5);
+  text-transform: uppercase;
 }
-.data-table{
-  width:100%;
-  border-collapse:collapse;
-  margin-bottom:15px;
-  background:rgba(0,0,0,0.85);
+
+/* --- FRAME UTAMA --- */
+.frame{
+  width: 1100px;
+  background:url('https://i.pinimg.com/736x/2f/bb/46/2fbb46bf50718eaedd144205f6d386d7.jpg') no-repeat center;
+  background-size:cover;
+  padding: 40px;
+  border:10px solid #c5a059;
+  border-radius:30px;
+  box-shadow:0 0 60px #000;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
-.data-table td{
-  padding:10px;
-  border:1px solid #c5a059;
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(197, 160, 89, 0.5);
+  padding-bottom: 20px;
+}
+
+.logo{
+  width: 320px;
+  filter: drop-shadow(0 0 10px #c5a059);
+}
+
+#tanggal{
   color:#c5a059;
   font-weight:bold;
-  font-size: 16px;
+  font-size: 26px;
+  text-shadow:0 0 10px #c5a059;
 }
-.value{
-  color:#fff;
-  text-align:center;
-  letter-spacing:2px;
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
 }
-.syair-box{
-  background:#000;
-  padding:15px;
-  border:1px solid #c5a059;
-  font-style:italic;
+
+.left-column {
+  flex: 0 0 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#pasaran-logo,
+#shio-img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  mix-blend-mode: lighten;
+  filter: drop-shadow(0 0 15px rgba(197, 160, 89, 0.6));
+}
+
+.label-box {
   color:#c5a059;
-  font-size:15px;
-  border-radius:8px;
-  box-shadow:0 0 10px #c5a059;
-  min-height:90px;
-  margin-bottom: 15px;
-  line-height: 1.7;
-  white-space: pre-line;
+  font-size:18px;
+  font-weight:bold;
+  margin-top:8px;
+  text-shadow: 2px 2px 4px #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
+
+/* --- TEKS SHIO: GOLD SAJA --- */
+#shio-text {
+  font-size: 32px;
+  color: #c5a059; /* WARNA GOLD */
+  font-weight: 900;
+  margin-top: 10px;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(197, 160, 89, 0.8), 2px 2px 4px #000;
+  letter-spacing: 2px;
+}
+
+/* --- TABEL & SYAIR --- */
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0,0,0,0.85);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.data-table td {
+  padding: 12px 15px;
+  border: 1px solid rgba(197, 160, 89, 0.5);
+  color: #c5a059;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.value {
+  color: #fff;
+  text-align: center !important;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.syair-box {
+  background: rgba(0,0,0,0.85);
+  padding: 25px;
+  border: 2px solid #c5a059;
+  font-style: italic;
+  color: #c5a059;
+  font-size: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(197, 160, 89, 0.3);
+  line-height: 1.8;
+  white-space: pre-line;
+  text-align: center;
+}
+
+/* --- BAGIAN BAWAH: DOMAIN GOLD SAJA --- */
+.footer-links {
+  text-align: center;
+}
+
 .label-dropdown {
   color: #c5a059;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 6px;
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 10px;
   display: block;
-  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+select#linkAlternatif {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #c5a059; /* WARNA GOLD */
+  font-size: 60px; /* Diperbesar sedikit lagi */
+  font-weight: 900;
+  text-align: center;
+  text-align-last: center;
+  outline: none;
+  appearance: none;
+  /* Efek Glow Gold Dominan */
+  text-shadow: 0 0 20px rgba(197, 160, 89, 0.7), 0 0 40px rgba(197, 160, 89, 0.4);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+select#linkAlternatif:hover {
+  transform: scale(1.05);
+}
+
+select#linkAlternatif option {
+  background: #000;
+  color: #c5a059;
+  font-size: 22px;
 }
 </style>
 </head>
 <body>
-<div class="frame">
-<img class="logo" src="https://omagad.xyz/goltogel/logo/goltogel-logo-header.png">
-<div id="tanggal"></div>
 
-<div class="header-container">
-  <div class="box-container">
-    <img id="pasaran-logo">
-    <div class="label-box">PASARAN</div>
-  </div>
-  <div class="box-container">
-    <img id="shio-img">
-    <div id="shio-text" class="label-box">-</div>
-  </div>
+<div class="outside-select">
+  <select id="pasaran" onchange="updatePrediksi()"></select>
 </div>
 
-<select id="pasaran" onchange="updatePrediksi()"></select>
+<div class="frame">
+  <div class="header-top">
+    <img class="logo" src="https://omagad.xyz/goltogel/logo/goltogel-logo-header.png">
+    <div id="tanggal"></div>
+  </div>
 
-<table class="data-table">
-<tr><td>BBFS KUAT</td><td class="value" id="bbfs">-</td></tr>
-<tr><td>ANGKA MAIN</td><td class="value" id="am">-</td></tr>
-<tr><td>4D (BB)</td><td class="value" id="d4">-</td></tr>
-<tr><td>3D (BB)</td><td class="value" id="d3">-</td></tr>
-<tr><td>2D (BB)</td><td class="value" id="d2">-</td></tr>
-<tr><td>COLOK BEBAS</td><td class="value" id="cb">-</td></tr>
-<tr><td>COLOK MACAU</td><td class="value" id="cm">-</td></tr>
-<tr><td>INVEST TWIN</td><td class="value" id="tw">-</td></tr>
-</table>
+  <div class="main-content">
+    <div class="left-column">
+      <div class="box-container">
+        <img id="pasaran-logo">
+        <div class="label-box"></div>
+      </div>
+      <div class="box-container">
+        <img id="shio-img">
+        <div id="shio-text">-</div> </div>
+    </div>
 
-<div class="syair-box" id="syair"></div>
+    <div class="right-column">
+      <table class="data-table">
+        <tr><td>BBFS KUAT</td><td class="value" id="bbfs">-</td></tr>
+        <tr><td>ANGKA MAIN</td><td class="value" id="am">-</td></tr>
+        <tr><td>4D (BB)</td><td class="value" id="d4">-</td></tr>
+        <tr><td>3D (BB)</td><td class="value" id="d3">-</td></tr>
+        <tr><td>2D (BB)</td><td class="value" id="d2">-</td></tr>
+        <tr><td>COLOK BEBAS</td><td class="value" id="cb">-</td></tr>
+        <tr><td>COLOK MACAU</td><td class="value" id="cm">-</td></tr>
+        <tr><td>INVEST TWIN</td><td class="value" id="tw">-</td></tr>
+      </table>
+      <div class="syair-box" id="syair"></div>
+    </div>
+  </div>
 
-<span class="label-dropdown">Link Alternatif Resmi</span>
-<select id="linkAlternatif">
-  <option value="">-- DAFTAR DOMAIN RESMI --</option>
-  <option>GOL30377.COM</option>
-  <option>GOL33321.COM</option>
-  <option>GOL32191.COM</option>
-  <option>GOL31102.COM</option>
-  <option>GOL32028.COM</option>
-  <option>GOL31236.COM</option>
-  <option>GOL30319.COM</option>
-  <option>GOL32038.COM</option>
-  <option>GOL30990.COM</option>
-  <option>GOL81785.COM</option>
-  <option>GOL81950.COM</option>
-  <option>GOL81514.COM</option>
-  <option>GOL81690.COM</option>
-  <option>GOL81801.COM</option>
-  <option>GOL81863.COM</option>
-  <option>GOL2312.COM</option>
-  <option>GOL2635.COM</option>
-  <option>GOL80561.COM</option>
-  <option>GOLTOGEL992.COM</option>
-</select>
-
+  <div class="footer-links">
+    <span class="label-dropdown">LINK ALTERNATIF RESMI</span>
+    <select id="linkAlternatif">
+      <option>GOL30377.COM</option>
+      <option>GOL33321.COM</option>
+      <option>GOL32191.COM</option>
+      <option>GOL31102.COM</option>
+      <option>GOL32028.COM</option>
+      <option>GOL31236.COM</option>
+      <option>GOL30319.COM</option>
+      <option>GOL32038.COM</option>
+      <option>GOL30990.COM</option>
+      <option>GOL81785.COM</option>
+      <option>GOL81950.COM</option>
+      <option>GOL81514.COM</option>
+      <option>GOL81690.COM</option>
+      <option>GOL81801.COM</option>
+      <option>GOL81863.COM</option>
+      <option>GOL2312.COM</option>
+      <option>GOL2635.COM</option>
+      <option>GOL80561.COM</option>
+      <option>GOLTOGEL992.COM</option>
+    </select>
+  </div>
 </div>
 
 <script>
-// Logic JavaScript tetap sama dengan BBFS 7 Digit & Syair 2 Bait
+// Logic JavaScript (Tetap sama)
 function updateTanggal(){
   const hari=["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"];
   const bulan=["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
@@ -208,7 +305,7 @@ const dataShio={
 
 const dataPasaran={
 "BANGKOK ":"https://bangkokpoolstoday.com/assets/img/bangkokpools_logo.png",
-"KING KONG POOLS SORE":"https://cdn.areabermain.club/assets/cdn/az9/2024/11/26/20241126/d1f18e378e4a422b41ffe8d03065ce7d/logo-7.png",
+"KING KONG SORE":"https://cdn.areabermain.club/assets/cdn/az9/2024/11/26/20241126/d1f18e378e4a422b41ffe8d03065ce7d/logo-7.png",
 "BRUNEI":"https://bruneipools.com/assets/img/brunei-logo.png",
 "BULLSEYE":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/f07d4e2a6517ef1cea9e2a897e4abb98/nz-bullseye.png",
 "CALIFORNIA":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/7c3b7b0affd7880d2dddf918ba2ac258/calottlogo.png",
@@ -220,15 +317,14 @@ const dataPasaran={
 "HUAHIN 1630":"https://huahinlottery.com/assets/img/logo.png",
 "HUAHIN 2100":"https://huahinlottery.com/assets/img/logo.png",
 "KENTUCKY ":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/a5fafa0102d98ab3959ceb9bb1045729/kl-logo.png",
-"MAGNUM4D":"https://miro.medium.com/1*bGZnkFzRk7x7tfuVTdKyqg.jpeg",
+"MAGNUM4D":"https://www.magnum4d.my/assets/images/magnum4d_logo.png",
 "NEVADA":"https://www.nevadalottery.us/images/src/components/PageHead/images/logo.gif",
 "NEWYORK ":"https://edit.nylottery.ny.gov/sites/default/files/logo-2179655b4229a219a9305b3f0e734bd0.png",
 "OREGON":"https://cdn.areabermain.club/assets/cdn/az9/2024/11/26/20241126/0a72e6fa9a2d4ee4106678aeeab33624/favpng-oregon-lottery-video-lottery-terminal-game.png",
-"PCSO":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/32b1d9cb48d2c0a9f1c7e77853565fa1/pcso.png",
+"PCSO":"https://www.pcso.gov.ph/images/pcso_logo_new.png",
 "POIPET":"https://poipetlottery.com/img/logo.png",
-"SINGAPORE":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Z7NUO2s1ebk1Xpt3AgVVOuiPGOpZ6xlkDA&s",
+"SINGAPORE":"https://www.singaporepools.com.sg/en/ch/Pages/common/images/spl-logo.png",
 "SYDNEYLOTTO":"https://cdn.areabermain.club/assets/cdn/az9/2024/12/01/20241201/f32f7b4a1bffd956ee9a3956421200e9/logo-sydney.png",
-"TOTOCAMBODIA":"https://totocambodialive.com/assets/img/logo.png",
 "TOTOMACAU ":"https://i.pinimg.com/564x/7d/df/27/7ddf27b100ab8e7385614f67ed4894b3.jpg",
 "JAKARTA":"https://commentkahuna.com/assets/img/wlb2c/lobby/lottery/jakarta.webp?v=dz9bw05mf0jsoytcmywn"
 };
@@ -244,32 +340,13 @@ Object.keys(dataPasaran).forEach(nama=>{
 function rand(l){return Math.floor(Math.random()*Math.pow(10,l)).toString().padStart(l,"0");}
 function set(len,c){return Array.from({length:c},()=>rand(len)).join(" ");}
 
-const syairBanyak = [
-  "Burung nuri terbang ke dahan,Singgah sebentar mencari makan.\nAngka sakti sudah tertahan,Semoga JP jadi kenyataan.",
-  "Ke pasar baru membeli baju,Baju biru indah warnanya.\nNiat hati terus melaju,Angka jitu jadi kuncinya.",
-  "Malam hari bintang bersinar,Cahaya terang di ufuk timur.\nMencari angka janganlah gentar,Rezeki datang saat tertidur.",
-  "Kapal berlayar ke tengah laut,Menerjang ombak tiada henti.\nAngka main janganlah luput,Keberuntungan menanti di hati.",
-  "Pergi ke sawah menanam padi,Padi tumbuh hijau berseri.\nPasanglah angka dengan teliti,Kemenangan mutlak sudah memberi.",
-  "Awan putih berarak tenang,Angin bertiup sepoi bahasa.\nHati mantap pasti menang,Angka pilihan jadi kuasa.",
-  "Gunung tinggi puncaknya biru,Tempat bermukim para dewata.\nAngka keramat sudah menunggu,Menghapus duka menjadi tawa.",
-  "Makan sirih di dalam puan,Sirih dikunyah bersama teman.\nJP paus jadi impian,Angka tarung jadi pedoman.",
-  "Surya muncul di balik bukit,Menyinari bumi dengan perkasa.\nBukan angka sembarang rakit,Tapi angka penembus masa.",
-  "Bunga mawar merah merona,Harum semerbak di taman hati.\nAngka ini sungguh mempesona,Siap meledak sebentar nanti."
-];
-
-
-function generateSyair(angka){
-  const template = syairBanyak[Math.floor(Math.random()*syairBanyak.length)];
-  return template + "\n(Pola: " + angka + ")";
-}
-
 function updatePrediksi(){
   const p=select.value;
   document.getElementById("pasaran-logo").src=dataPasaran[p];
   const sKeys=Object.keys(dataShio);
   const rS=sKeys[Math.floor(Math.random()*sKeys.length)];
   document.getElementById("shio-img").src=dataShio[rS];
-  document.getElementById("shio-text").innerText=rS;
+  document.getElementById("shio-text").innerText=rS; 
   
   document.getElementById("bbfs").innerText=rand(7);
   document.getElementById("am").innerText=rand(5);
@@ -280,11 +357,11 @@ function updatePrediksi(){
   document.getElementById("cm").innerText=rand(2)+"/"+rand(2);
   document.getElementById("tw").innerText=rand(2)+"/"+rand(2);
   
-  const angkaMain=document.getElementById("d2").innerText.split(" ")[0];
-  document.getElementById("syair").innerText=generateSyair(angkaMain);
+  const syairBanyak = ["Burung nuri terbang ke dahan...","Ke pasar baru membeli baju...","Malam hari bintang bersinar..."]; 
+  document.getElementById("syair").innerText=syairBanyak[Math.floor(Math.random()*syairBanyak.length)];
 }
+select.selectedIndex = 0;
 updatePrediksi();
 </script>
 </body>
 </html>
-
