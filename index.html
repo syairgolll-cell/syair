@@ -357,7 +357,19 @@ function updatePrediksi(){
   document.getElementById("cm").innerText=rand(2)+"/"+rand(2);
   document.getElementById("tw").innerText=rand(2)+"/"+rand(2);
   
-  const syairBanyak = ["Burung nuri terbang ke dahan...","Ke pasar baru membeli baju...","Malam hari bintang bersinar..."]; 
+  const syairBanyak = [
+  "Burung nuri terbang ke dahan,Singgah sebentar mencari makan.\nAngka sakti sudah tertahan,Semoga JP jadi kenyataan.",
+  "Ke pasar baru membeli baju,Baju biru indah warnanya.\nNiat hati terus melaju,Angka jitu jadi kuncinya.",
+  "Malam hari bintang bersinar,Cahaya terang di ufuk timur.\nMencari angka janganlah gentar,Rezeki datang saat tertidur.",
+  "Kapal berlayar ke tengah laut,Menerjang ombak tiada henti.\nAngka main janganlah luput,Keberuntungan menanti di hati.",
+  "Pergi ke sawah menanam padi,Padi tumbuh hijau berseri.\nPasanglah angka dengan teliti,Kemenangan mutlak sudah memberi.",
+  "Awan putih berarak tenang,Angin bertiup sepoi bahasa.\nHati mantap pasti menang,Angka pilihan jadi kuasa.",
+  "Gunung tinggi puncaknya biru,Tempat bermukim para dewata.\nAngka keramat sudah menunggu,Menghapus duka menjadi tawa.",
+  "Makan sirih di dalam puan,Sirih dikunyah bersama teman.\nJP paus jadi impian,Angka tarung jadi pedoman.",
+  "Surya muncul di balik bukit,Menyinari bumi dengan perkasa.\nBukan angka sembarang rakit,Tapi angka penembus masa.",
+  "Bunga mawar merah merona,Harum semerbak di taman hati.\nAngka ini sungguh mempesona,Siap meledak sebentar nanti."
+];
+ 
   document.getElementById("syair").innerText=syairBanyak[Math.floor(Math.random()*syairBanyak.length)];
 }
 select.selectedIndex = 0;
